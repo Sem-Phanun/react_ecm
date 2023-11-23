@@ -1,0 +1,33 @@
+.navbar-container {
+  background-color: #319dff;
+
+  .navbarList {
+    display: flex;
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+
+    li {
+      display: flex;
+      padding: 10px 24px;
+      justify-content: center;
+      align-items: center;
+      flex: 1 0 0;
+      margin-right: auto;
+      border-right: 1px solid #0077e4;
+
+      &:last-child {
+        border-right: none;
+      }
+      a {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}
