@@ -1,0 +1,14 @@
+.feature-product {
+    display: flex;
+    padding: 0px 100px 50px;
+    flex-direction: column;
+    gap: 4rem;
+    align-self: stretch;
+    background-color: #fff;
+
+    .product-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

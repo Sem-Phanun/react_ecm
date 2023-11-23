@@ -1,0 +1,122 @@
+.slide-container {
+  height: 80vh;
+  .slide-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #7d8fa9;
+
+    .content-wrapper {
+      .content-box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .title-box {
+          display: inline-flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 40px;
+          padding-left: 3rem;
+
+          .title {
+            color: #1d232c;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          .btn {
+            font-size: 0.8rem;
+            color: #fff;
+            gap: 8px;
+            border-radius: 16px;
+            padding: 0.8rem;
+            border: none;
+            background: #319dff;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        .image-box {
+          margin-top: 2rem;
+          margin-left: 5rem;
+          width: 50vw;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.feature-container {
+  padding: 3rem;
+
+  .feature-icons {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid #eef0f4;
+    background: #fff;
+
+    li {
+      display: flex;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex: 1 0 0;
+      border-right: 1px solid #eef0f4;
+
+        &:last-child {
+            border-right: none;
+        }
+
+
+      .icon {
+        cursor: pointer;
+        color: #17b5bf;
+        font-size: 2rem;
+
+        &.credit_card {
+          color: #ffaa04;
+        }
+
+        &.security {
+          color: #319dff;
+        }
+
+        &.truck {
+          color: #0da678;
+        }
+
+        &.tag {
+          color: #e4003f;
+        }
+      }
+
+      .list {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            font-weight: 600;
+        }
+
+        p {
+            font-size: .8rem;
+        }
+      }
+    }
+  }
+}
