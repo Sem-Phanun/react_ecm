@@ -1,0 +1,24 @@
+.brand-container {
+  .brand-list {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    border-radius: 6px;
+    border: 1px solid #eef0f4;
+    background: #fff;
+
+    .brand-box {
+      display: flex;
+      width: 200px;
+      padding: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+    }
+  }
+}

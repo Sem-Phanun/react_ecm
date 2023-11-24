@@ -1,17 +1,16 @@
-
-
 import { Pagination } from "antd";
 import { featureProduct } from "../../data/data";
 import { IoBagHandle } from "react-icons/io5";
 import { FaHeart } from 'react-icons/fa'
-import "./FeatureProduct.scss";
-const FeatureProduct = () => {
+import './BigDeals.scss'
+
+const BigDeals = () => {
   return (
     <>
-      <div className="feature-container">
+        <div className="feature-container">
         <div className="feature-product">
           <article className="product-header">
-            <h1 className="product-title">feature products</h1>
+            <h1 className="product-title">Big Deals</h1>
           </article>
           <div className="btn-next_prev">
             <Pagination className="icons" />
@@ -42,7 +41,7 @@ const FeatureProduct = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default FeatureProduct;
+export default BigDeals

@@ -1,16 +1,20 @@
 .slide-container {
-  height: 80vh;
   .slide-wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: #7d8fa9;
+    min-height: 85vh;
+    &:nth-child(1) {
+      background: linear-gradient(182deg, #fff4fd 0%, #cbcdff 100%);
+    }
+
 
     .content-wrapper {
       .content-box {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        padding: 2rem;
 
         .title-box {
           display: inline-flex;
@@ -58,11 +62,12 @@
 }
 
 .feature-container {
-  padding: 3rem;
+  margin-top: 3rem;
+  padding: 1rem;
 
   .feature-icons {
     display: flex;
-    padding: 20px 0;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     border-radius: 6px;
@@ -78,10 +83,9 @@
       flex: 1 0 0;
       border-right: 1px solid #eef0f4;
 
-        &:last-child {
-            border-right: none;
-        }
-
+      &:last-child {
+        border-right: none;
+      }
 
       .icon {
         cursor: pointer;
@@ -110,11 +114,61 @@
         flex-direction: column;
 
         span {
-            font-weight: 600;
+          font-weight: 600;
         }
 
         p {
-            font-size: .8rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+.advertised-container {
+  margin-top: 2rem;
+  padding: 1rem;
+
+  .advertised-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .advertised-content {
+      display: flex;
+      width: 710px;
+      height: 200px;
+      padding: 30px 42px 30px 60px;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 33px;
+      border-radius: 6px;
+      background: linear-gradient(182deg, #f2fff7 0%, #c3f4ff 100%);
+
+      &:nth-child(2){
+        background: linear-gradient(182deg, #fff4fd 0%, #cbcdff 100%);
+      }
+      .advertised-title {
+        h1 {
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          color: #1d232c;
+        }
+      }
+
+      .ads-box {
+        cursor: pointer;
+
+        &.box1 {
+          width: 350px;
+
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
         }
       }
     }

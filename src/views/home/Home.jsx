@@ -1,4 +1,6 @@
 import { slideList } from "../../data/data";
+import JBL from '../../assets/tvandaudio/JBL.png'
+import Controller from '../../assets/gadgets/controller.png'
 import { Carousel } from "antd";
 import { FaTruck, FaTag } from "react-icons/fa";
 import {
@@ -8,6 +10,11 @@ import {
 } from "react-icons/md";
 import "./Home.scss";
 import FeatureProduct from "../../components/feature-product/FeatureProduct";
+import Category from "../../components/category/Category";
+import BestSelling from "../../components/bestselling/BestSelling";
+import BigDeals from "../../components/bigdeals/BigDeals";
+import Brand from "../../components/brands/Brand";
+import ProductList from "../../components/productList/ProductList";
 const Home = () => {
   return (
     <>
@@ -73,7 +80,45 @@ const Home = () => {
         </div>
       </div>
       
+      {/* product feature */}
       <FeatureProduct/>
+
+      {/* Category */}
+      <Category/>
+      
+      {/* best selling  */}
+      <BestSelling/>
+
+      {/* advertised */}
+      <div className="advertised-container">
+        <div className="advertised-wrapper">
+          <div className="advertised-content">
+            <article className="advertised-title">
+              <h1>PORTABLE SPEAKERS COLLECTION 2023</h1>
+            </article>
+            <figure className="ads-box">
+              <img src={JBL}/>
+            </figure>
+          </div>
+
+          <div className="advertised-content">
+            <article>
+              <h1>ALL ACCESSORIES FOR GAMERS</h1>
+            </article>
+            <figure className="ads-box box1">
+              <img src={Controller}/>
+            </figure>
+          </div>
+        </div>
+      </div>
+      {/* big deals */}
+      <BigDeals/>
+
+      {/* brands */}
+      <Brand/>
+
+      {/* product list */}
+      <ProductList/>
     </>
   );
 };
