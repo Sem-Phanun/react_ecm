@@ -2,7 +2,7 @@ import { slideList } from "../../data/data";
 import JBL from '../../assets/tvandaudio/JBL.png'
 import Controller from '../../assets/gadgets/controller.png'
 import { Carousel } from "antd";
-import { FaTruck, FaTag } from "react-icons/fa";
+import { FaTruck, FaTag, FaTelegramPlane } from "react-icons/fa";
 import {
   MdVerifiedUser,
   MdOutlineCreditCard,
@@ -117,8 +117,20 @@ const Home = () => {
       {/* brands */}
       <Brand/>
 
-      {/* product list */}
-      <ProductList/>
+     <div className="subcription">
+      <article className="subcript-title">
+        <h1 className="title">Subscribe to Our Newsletter  -  get a $20 Coupon for your first order! </h1>
+      </article>
+      
+      <div className="subcript-box">
+        <input type="text" 
+          placeholder="Enter your email address"
+        />
+        <button>
+          <FaTelegramPlane className="icon-airplane" />
+        </button>
+      </div>
+     </div>
     </>
   );
 };

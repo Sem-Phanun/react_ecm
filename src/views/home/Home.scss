@@ -8,7 +8,6 @@
       background: linear-gradient(182deg, #fff4fd 0%, #cbcdff 100%);
     }
 
-
     .content-wrapper {
       .content-box {
         display: flex;
@@ -146,7 +145,7 @@
       border-radius: 6px;
       background: linear-gradient(182deg, #f2fff7 0%, #c3f4ff 100%);
 
-      &:nth-child(2){
+      &:nth-child(2) {
         background: linear-gradient(182deg, #fff4fd 0%, #cbcdff 100%);
       }
       .advertised-title {
@@ -170,6 +169,59 @@
             object-fit: cover;
           }
         }
+      }
+    }
+  }
+}
+
+.subcription {
+  margin-top: 1rem;
+  display: flex;
+  height: 96px;
+  padding: 0px 100px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3b4758;
+
+  .subcript-title {
+    .title {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      color: #fff;
+    }
+  }
+
+  .subcript-box {
+    display: flex;
+    margin-left: 4rem;
+    align-items: center;
+    flex: 1 0 0;
+
+    input {
+      outline: none;
+      border: none;
+      width: 24rem;
+      padding: 13px 12px;
+      border-radius: 20px 0px 0px 20px;
+      background: #fff;
+    }
+
+    button {
+      border: none;
+      display: flex;
+      height: 45px;
+      padding: 0px 15px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 0px 20px 20px 0px;
+      background: #319dff;
+
+      .icon-airplane {
+        color: #fff;
+        cursor: pointer;
       }
     }
   }
