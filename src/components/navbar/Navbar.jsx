@@ -1,29 +1,21 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { navbarList } from '../../data/data'
 import './Navbar.scss'
 const Navbar = () => {
   return (
     <>
       <nav className="navbar-container">
         <ul className="navbarList">
-          <li>
-            <NavLink to={"/shop"}>Shop</NavLink>
-          </li>
-          <li>
-            <NavLink to={"/tvandaudio"}>Tv&Audio</NavLink>
-          </li>
-          <li>
-            <NavLink to={"/smartphones"}>Smartphones</NavLink>
-          </li>
-          <li>
-            <NavLink to={"/laptopandpcs"}>Laptop&Pcs</NavLink>
-          </li>
-          <li>
-            <NavLink to={"/gadgets"}>Gadgets</NavLink>
-          </li>
-          <li>
-            <NavLink to={"/accessory"}>Accessory</NavLink>
-          </li>
+          {
+            navbarList.map((navbar, index)=> {
+              return (
+                <li key={index}>
+                  <NavLink to={navbar.route}>{navbar.name}</NavLink>
+                </li>
+              )
+            })
+          }
         </ul>
       </nav>
     </>

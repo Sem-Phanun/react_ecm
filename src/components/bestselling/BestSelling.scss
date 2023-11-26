@@ -24,10 +24,16 @@
     }
 
     .btn-next_prev {
+      
       .icons {
         font-size: 1.5rem;
         cursor: pointer;
         color: #586a84;
+        transition: .2s ease-in;
+        
+        &:hover {
+          transform: scale(.5);
+        }
       }
     }
   }

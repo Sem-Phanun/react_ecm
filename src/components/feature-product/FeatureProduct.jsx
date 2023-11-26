@@ -4,6 +4,7 @@ import { Pagination } from "antd";
 import { featureProduct } from "../../data/data";
 import { IoBagHandle } from "react-icons/io5";
 import { FaHeart } from 'react-icons/fa'
+import { GrNext, GrPrevious } from "react-icons/gr";
 import "./FeatureProduct.scss";
 const FeatureProduct = () => {
   return (
@@ -14,7 +15,9 @@ const FeatureProduct = () => {
             <h1 className="product-title">feature products</h1>
           </article>
           <div className="btn-next_prev">
-            <Pagination className="icons" />
+            <GrPrevious className="icons"/>
+            <GrNext className="icons"/>
+            
           </div>
         </div>
 

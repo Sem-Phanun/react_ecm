@@ -1,10 +1,25 @@
 import "./Footer.scss";
 import { Link } from "react-router-dom";
-import { FaTelegram, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaTelegram, FaFacebook, FaInstagram, FaTelegramPlane } from "react-icons/fa";
 import Logo from "../../assets/logo/logo.png";
 const Footer = () => {
   return (
     <>
+      <div className="subcription">
+      <article className="subcript-title">
+        <h1 className="title">Subscribe to Our Newsletter  -  get a $20 Coupon for your first order! </h1>
+      </article>
+      
+      <div className="subcript-box">
+        <input type="text" 
+          placeholder="Enter your email address"
+        />
+        <button>
+          <FaTelegramPlane className="icon-airplane" />
+        </button>
+      </div>
+     </div>
+
       <footer className="footer-container">
         <div className="footer-wrapper">
           <figure className="logo-box">

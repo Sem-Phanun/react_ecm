@@ -14,7 +14,6 @@ import Category from "../../components/category/Category";
 import BestSelling from "../../components/bestselling/BestSelling";
 import BigDeals from "../../components/bigdeals/BigDeals";
 import Brand from "../../components/brands/Brand";
-import ProductList from "../../components/productList/ProductList";
 const Home = () => {
   return (
     <>
@@ -117,20 +116,6 @@ const Home = () => {
       {/* brands */}
       <Brand/>
 
-     <div className="subcription">
-      <article className="subcript-title">
-        <h1 className="title">Subscribe to Our Newsletter  -  get a $20 Coupon for your first order! </h1>
-      </article>
-      
-      <div className="subcript-box">
-        <input type="text" 
-          placeholder="Enter your email address"
-        />
-        <button>
-          <FaTelegramPlane className="icon-airplane" />
-        </button>
-      </div>
-     </div>
     </>
   );
 };
