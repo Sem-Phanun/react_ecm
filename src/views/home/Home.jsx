@@ -112,10 +112,6 @@ const Home = () => {
       </div>
       {/* big deals */}
       <BigDeals/>
-
-      {/* brands */}
-      <Brand/>
-
     </>
   );
 };

@@ -1,81 +1,25 @@
 import "./Brand.scss";
-import Gama from "../../assets/brands/Gama.svg";
-import TECHNOVA from "../../assets/brands/TECHNOVA.svg";
-import Indiezone from "../../assets/brands/indiezone.svg";
-import Tracic from "../../assets/brands/TRACIC.svg";
-import Gomezbuzz from "../../assets/brands/gomezbuzz.svg";
-import Shopania from "../../assets/brands/Shopania.svg";
-import iMade from "../../assets/brands/iMADE.svg";
-import upside from "../../assets/brands/upside.svg";
-import wofact from "../../assets/brands/wofact.svg";
-import gamerzone from "../../assets/brands/gamerzone.svg";
-
+import { brand } from "../../data/data";
 const Brand = () => {
   return (
     <>
-      <main className="brand-container">
-        <div className="brand-list">
-          <div className="brand-box">
-            <figure className="brand-img">
-              <img src={Gama} />
-            </figure>
-          </div>
-
-          <div className="brand-box">
-            <figure className="brand-img">
-              <img src={TECHNOVA} />
-            </figure>
-          </div>
-
-          <div className="brand-box">
-            <figure className="brand-img">
-              <img src={Indiezone} />
-            </figure>
-          </div>
-
-          <div className="brand-box">
-            <figure className="brand-img">
-              <img src={Tracic} />
-            </figure>
-          </div>
-
-          <div className="brand-box">
-            <figure className="brand-img">
-              <img src={Gomezbuzz} />
-            </figure>
-          </div>
-
-          <div className="brand-box">
-            <figure className="brand-img">
-              <img src={Shopania} />
-            </figure>
-          </div>
-
-          <div className="brand-box">
-            <figure className="brand-img">
-              <img src={iMade} />
-            </figure>
-          </div>
-
-          <div className="brand-box">
-            <figure className="brand-img">
-              <img src={upside} />
-            </figure>
-          </div>
-
-          <div className="brand-box">
-            <figure className="brand-img">
-              <img src={wofact} />
-            </figure>
-          </div>
-
-          <div className="brand-box">
-            <figure className="brand-img">
-              <img src={gamerzone} />
-            </figure>
-          </div>
+      <div className="brand-container">
+        <article className="brand-title">
+          <h1>Brands</h1>
+        </article>
+        <div className="checkbox-container">
+          {brand.map((items, index) => {
+            return (
+              <div className="checkbox" key={index}>
+                <input type="checkbox" />
+                <label htmlFor="">{items.name}</label>
+              </div>
+            );
+          })}
         </div>
-      </main>
+
+        <div>show more</div>
+      </div>
     </>
   );
 };

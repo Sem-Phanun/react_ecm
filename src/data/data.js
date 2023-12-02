@@ -38,11 +38,6 @@ export const navbarList = [
     },
     {
         id: 5,
-        name: "Gadgets",
-        route: "/gadgets"
-    },
-    {
-        id: 6,
         name: "Accessory",
         route: "/accessory"
     }
@@ -149,3 +144,105 @@ export const categoryProduct = [
     image: ELink,
   },
 ];
+
+
+export const brand = [
+  {
+    id:1,
+    name: "Apple",
+  },
+  {
+    id: 2,
+    name: "Samsung"
+  },
+  {
+    id: 3,
+    name: "Oppo",
+  },
+  {
+    id: 4,
+    name: "Lenovo"
+  },
+  {
+    id: 5,
+    name: "Msi"
+  },
+  {
+    id: 6,
+    name: "Asus"
+  },
+  {
+    id: 7,
+    name: "MacBook"
+  }
+]
+
+export const priceList = [
+  {
+    id: 1,
+    price: "<50"
+  },
+  {
+    id: 2,
+    price: "<100-200"
+  },
+  {
+    id: 3,
+    price: "<200-300"
+  },
+  {
+    id: 4,
+    price: "<300-400"
+  },
+  {
+    id: 5,
+    price: "<400-500"
+  },
+  {
+    id: 6,
+    price: ">500"
+  },
+]
+
+export const colorList = [
+  {
+    id: 1,
+    color: "#000000"
+  },
+  {
+    id: 2,
+    color: "#FFFFFF"
+  },
+  {
+    id: 3,
+    color: "#319DFF"
+  },
+  {
+    id: 4,
+    color: "#FFDE31"
+  },
+  {
+    id: 5,
+    color: "#FF316A"
+  },
+  {
+    id: 6,
+    color: "#0DA678"
+  },
+  {
+    id: 7,
+    color: "#9E13F3"
+  },
+  {
+    id: 8,
+    color: "#FFAA04"
+  },
+  {
+    id: 9,
+    color: "#FF64DD"
+  },
+  {
+    id: 10,
+    color: "#17D1DD"
+  }
+]

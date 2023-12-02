@@ -27,7 +27,7 @@ const Footer = () => {
 
             <div className="footer-title">
               <p>Email:</p>
-              <span>year4.webassignment@gmail.com</span>
+              <span>eplateform.store@gmail.com</span>
             </div>
 
             <div className="social-links">

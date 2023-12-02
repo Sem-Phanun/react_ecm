@@ -1,29 +1,22 @@
-import { NavLink } from 'react-router-dom'
-import { navbarList } from '../../data/data'
+import ShopLayout from '../../components/shop-layout/ShopLayout'
+import Brand from '../../components/brands/Brand'
+import Color from '../../components/color/Color'
+import SubHeader from '../../components/header/sub-header/SubHeader'
+import Rating from '../../components/rating/Rating'
+import Price from '../../components/price/Price'
 import './Shop.scss'
 const Shop = () => {
   return (
     <>
       <main className="shopContainer">
         <aside className="asideContainer">
-          <nav className="categoryHeader">
-            <h1>Categories</h1>
-            <ul className="categoryList">
-            {
-              navbarList.map((navbar, index) => {
-                return (
-                  <li key={index}>
-                    <NavLink to={navbar.route}>{navbar.name}</NavLink>
-                  </li>
-                )
-              })
-            }
-            </ul>
-          </nav>
+          <SubHeader/>
+          <Brand/>
+          <Price/>
+          <Color/>
+          <Rating/>
         </aside>
-        <main className="shop-category">
-          dfsa
-        </main>
+        <ShopLayout/>
       </main>
     </>
   )

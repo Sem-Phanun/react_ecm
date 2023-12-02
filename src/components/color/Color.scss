@@ -1,4 +1,4 @@
-.brand-container {
+.color-container {
   display: flex;
   padding: 20px;
   width: 170px;
@@ -8,7 +8,8 @@
   border-radius: 6px;
   border: 1px solid #eef0f4;
   background-color: #fff;
-  .brand-title {
+
+  .color-title {
     h1 {
       font-size: 16px;
       font-style: normal;
@@ -18,18 +19,18 @@
     }
   }
 
-  .checkbox-container {
+  .color-filter {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-start;
-    gap: 20px;
-    .checkbox {
-      display: flex;
+    gap: 13px;
 
-      label {
-        margin-left: .6rem;
+    .color-picker {
+      
+      button {
+        border: none;
       }
+      
     }
   }
-
 }

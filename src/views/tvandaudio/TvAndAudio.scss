@@ -1,0 +1,15 @@
+.tv_and_audio-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+
+  .asideContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
