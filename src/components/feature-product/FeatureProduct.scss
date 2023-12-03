@@ -119,18 +119,7 @@
           
           &:hover {
             background-color: #0077e4;
-            .heart-icon {
-              margin-top: -5rem;
-              position: absolute;
-              display: block;
-              transition: .4s ease;
-            }
           }
-        }
-
-        .heart-icon {
-          display: none;
-          color: #586a84;
         }
       }
     }

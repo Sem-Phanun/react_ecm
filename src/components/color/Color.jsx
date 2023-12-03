@@ -10,10 +10,13 @@ const Color = () => {
         </article>
         <div className="color-filter">
           {
-            colorList.map((colors,index)=> {
+            colorList.map((curColor,index)=> {
               return (
                 <div className='color-picker' key={index}>
-                  <button>{colors.color}</button>
+                  <button
+                  type='button'
+                  style={{backgroundColor: curColor}}
+                  >{curColor.color}</button>
                 </div>
               )
             })

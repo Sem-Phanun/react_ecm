@@ -27,7 +27,7 @@ const FeatureProduct = () => {
               <div className="product-card" key={index}>
                 <article className="article-header">
                   <h6>{item.name}</h6>
-                  <p>{item.title}</p>
+                  <p>{item.description}</p>
                 </article>
                 <figure className="product-image">
                   <img src={item.image} />
@@ -36,7 +36,6 @@ const FeatureProduct = () => {
                   <span className="price">{item.price}</span>
                   <span className="bag-icon">
                     <IoBagHandle color="#ffffff" />
-                    <FaHeart className="heart-icon"/>
                   </span>
                 </div>
               </div>

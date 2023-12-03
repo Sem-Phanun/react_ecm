@@ -27,7 +27,7 @@ const Price = () => {
         </div>
 
         <div className="progress">
-          <progress value="10"></progress>
+          <input type="range" min="6" max="100"/>
           <span>price: $6 - $13000 </span>
         </div>
       </div>

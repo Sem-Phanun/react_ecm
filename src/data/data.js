@@ -68,35 +68,35 @@ export const featureProduct = [
   {
     id: 1,
     name: "Smartphones",
-    title: "Apple iPhone 14 Pro, LTPO Super Retina XDR OLED 6.1'",
+    description: "Apple iPhone 14 Pro, LTPO Super Retina XDR OLED 6.1'",
     price: "$ 1200.00",
     image: Phone,
   },
   {
     id: 2,
     name: "Tv & Audio",
-    title: "SONY SRSXV900, Wireless Party Speaker, MEGA BASS",
+    description: "SONY SRSXV900, Wireless Party Speaker, MEGA BASS",
     price: "$ 800.00",
     image: Speaker,
   },
   {
     id: 3,
     name: "Tv & Audio",
-    title: "Headphones, Noise cancelling, Bluetooth 5.0",
+    description: "Headphones, Noise cancelling, Bluetooth 5.0",
     price: "$ 100.00",
     image: Headphones,
   },
   {
     id: 4,
     name: "Smartphones",
-    title: "Data Cable, Mcdodo CA-7430 Nest Series Full Compatible",
+    description: "Data Cable, Mcdodo CA-7430 Nest Series Full Compatible",
     price: "$ 10.00",
     image: Cable,
   },
   {
     id: 5,
     name: "Smartphones",
-    title: "Headphones, True Wireless Xiaomi Redmi Buds 3 Lite",
+    description: "Headphones, True Wireless Xiaomi Redmi Buds 3 Lite",
     price: "$20.00",
     image: AirPort,
   },
@@ -207,7 +207,7 @@ export const priceList = [
 export const colorList = [
   {
     id: 1,
-    color: "#000000"
+    color: "black"
   },
   {
     id: 2,
