@@ -2,7 +2,7 @@ import SubHeader from '../../components/header/sub-header/SubHeader'
 import Brand from '../../components/brands/Brand'
 import Price from '../../components/price/Price'
 import Color from '../../components/color/Color'
-import Rating from '../../components/rating/Rating'
+import ShopLayout from '../../components/shop-layout/ShopLayout'
 import './LaptopAndPcs.scss'
 const LaptopAndPcs = () => {
   return (
@@ -13,8 +13,8 @@ const LaptopAndPcs = () => {
           <Brand/>
           <Price/>
           <Color/>
-          <Rating/>
         </aside>
+        <ShopLayout/>
       </main>
     </>
   )

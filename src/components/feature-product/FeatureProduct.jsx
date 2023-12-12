@@ -1,11 +1,10 @@
 
-
-import { Pagination } from "antd";
 import { featureProduct } from "../../data/data";
 import { IoBagHandle } from "react-icons/io5";
 import { FaHeart } from 'react-icons/fa'
 import { GrNext, GrPrevious } from "react-icons/gr";
 import "./FeatureProduct.scss";
+import { Link } from "react-router-dom";
 const FeatureProduct = () => {
   return (
     <>
@@ -24,7 +23,7 @@ const FeatureProduct = () => {
         <div className="product-wrapper">
           {featureProduct.map((item, index) => {
             return (
-              <div className="product-card" key={index}>
+              <Link to={'/productDetail'} key={index} className="product-card">
                 <article className="article-header">
                   <h6>{item.name}</h6>
                   <p>{item.description}</p>
@@ -38,7 +37,7 @@ const FeatureProduct = () => {
                     <IoBagHandle color="#ffffff" />
                   </span>
                 </div>
-              </div>
+              </Link>
               )
             })}
         </div>

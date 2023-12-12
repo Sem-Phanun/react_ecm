@@ -10,6 +10,7 @@ import TvAndAudio from './views/tvandaudio/TvAndAudio'
 import Smartphones from './views/smartphones/SmartPhones'
 import LaptopAndPcs from './views/laptopandpcs/LaptopAndPcs'
 import Accessory from './views/accessory/Accessory'
+import ProductDetail from "./views/productDetail/ProductDetail"
 const App = () => {
   return (
     <div>
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/smartphones" element={<Smartphones/>}/>
         <Route path="/laptopandpcs" element={<LaptopAndPcs/>}/>
         <Route path="/accessory" element={<Accessory/>}/>
+        <Route path="/productDetail" element={<ProductDetail/>}/>
       </Routes>
 
       <Footer/>
